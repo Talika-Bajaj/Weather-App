@@ -16,6 +16,7 @@ body {
     /* align-items: center; */
 }
 
+/* container */
 .container {
     width: 100%;
     margin: auto;
@@ -33,21 +34,20 @@ h1 {
     font-family: "Kreon", serif;
 
 }
-
+/* form */
 .weather-form {
     display: flex;
     align-items: center;
     padding: 20px 35px;
     background-color: rgba(255,255,255, 0.45);
     border-radius: 12px;
-    /* width: 100%; */
 }
 
 .input-group {
     position: relative;
     width: 100%;
 }
-
+/* input-field */
 #city {
     margin-right: -4px;
     height: 60px;
@@ -59,10 +59,10 @@ h1 {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border: 2px solid #777;
-    font-size: 21px;
-    
+    font-size: 21px;    
 }
 
+/* label */
 .city-name {
     position: absolute;
     z-index: 2;
@@ -94,16 +94,15 @@ h1 {
     background-color: #dedcdc;
 }
 
+/* weather container */
 .weather-data {
     display: none;
     border: 3px solid #a3bfda;
     background: linear-gradient(0.56turn, #ffff1d 11%,white 48%,cadetblue 98%);
-    /* font-family: "Grandstander", cursive !important; */
     padding: 45px 20px;
     border-radius: 15px;
     width: 404px;
     /* display: flex; */
-    /* width: 100%; */
     flex-direction: column;
     align-items: center;
     gap: 35px;
@@ -114,9 +113,11 @@ h1 {
     font-size: 39px;
     font-family: "Kreon", serif !important;
 }
+
 #temp-condition {
     text-align: center;
 }
+
 .temp {
     font-size: 27px;
 }
@@ -124,6 +125,7 @@ h1 {
 .weather {
     font-size: 30px;
 }
+
 #city-condition {
     font-family: "Kreon", serif !important;
     font-size: 33px;
@@ -142,7 +144,6 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 223px;
-    /* justify-content: space-between; */
 }
 
 #temp-wind {
@@ -150,7 +151,6 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 250px;
-    /* justify-content: space-between; */
     color:rebeccapurple;
 }
 

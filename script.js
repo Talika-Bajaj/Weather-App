@@ -8,6 +8,7 @@ let units = "&units=metric";
 let place = document.getElementById("city");
 let weatherData = document.querySelector(".weather-data");
 
+// event listener - input field
 city.addEventListener("focus",onFocus);
 city.addEventListener("focusout",()=> {
     if (place.value === "") {
@@ -16,6 +17,7 @@ city.addEventListener("focusout",()=> {
 });
 searchBtn.addEventListener("click",offFocus);
 
+// function - input field
 function onFocus () {
     document.querySelector(".city-name").classList.add("active");
 }
@@ -25,6 +27,7 @@ function offFocus () {
 }
 
 
+// async function to fetch data
 async function getWeather (city) {
     try {
 
@@ -58,6 +61,7 @@ async function getWeather (city) {
 getWeather();
 
 
+// event listener to search
 document.querySelector(".weather-form").addEventListener("submit", (e)=> {
     e.preventDefault();
     getWeather(place.value);
