@@ -1,5 +1,5 @@
 // import api-key from "./data.json";
-import key from './data.json' assert { type: 'json' };
+import key from './data.json';
 
 let city = document.getElementById("city");
 let searchBtn = document.getElementById("search-btn");
