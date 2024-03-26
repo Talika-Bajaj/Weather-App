@@ -10,10 +10,14 @@
 
 body {
     background: linear-gradient(0.25turn, indianred 0%, plum 40%, wheat 50%, lightseagreen 67%, seagreen  113%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .container {
-    width: 70%;
+    width: 100%;
     margin: auto;
     /* border: 2px solid red; */
     padding: 40px 30px;
@@ -36,16 +40,21 @@ h1 {
     padding: 20px 35px;
     background-color: rgba(255,255,255, 0.45);
     border-radius: 12px;
+    /* width: 100%; */
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
 }
 
 #city {
     margin-right: -4px;
     height: 60px;
-    position: relative;
     padding: 20px 15px 10px;
     transition: 0.4s ease;
     /* border: 2px solid black; */
-    width: 350px;
+    width: 100%;
     border-radius: 12px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -59,14 +68,14 @@ h1 {
     z-index: 2;
     font-size: 19px;
     color: #777;
-    top: 164px;
-    left: 496px;
+    top: 17px;
+    left: 17px;
     transition: 0.5s ease;
 }
 
 .city-name.active {
-    top: 148px;
-    font-size: 17px;
+    top: 8px;
+    font-size: 15px;
 }
 
 #search-btn {
@@ -94,6 +103,7 @@ h1 {
     border-radius: 15px;
     width: 404px;
     /* display: flex; */
+    /* width: 100%; */
     flex-direction: column;
     align-items: center;
     gap: 35px;
@@ -104,19 +114,52 @@ h1 {
     font-size: 39px;
     font-family: "Kreon", serif !important;
 }
+#temp-condition {
+    text-align: center;
+}
+.temp {
+    font-size: 27px;
+}
 
+.weather {
+    font-size: 30px;
+}
 #city-condition {
     font-family: "Kreon", serif !important;
     font-size: 33px;
     color: firebrick;
 }
 
+.show {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    gap: 35%;
+}
+
+#temp-wind-display {
+    color:rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    width: 223px;
+    /* justify-content: space-between; */
+}
+
 #temp-wind {
     font-family: "Kreon", serif !important;
     display: flex;
-    width: 200px;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 250px;
+    /* justify-content: space-between; */
     color:rebeccapurple;
+}
+
+.head {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info {
     font-size: 27px;
     font-weight: 600;
 }
