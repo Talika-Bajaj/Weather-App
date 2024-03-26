@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kreon:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Salsa", cursive;
+
+}
+
+body {
+    background: linear-gradient(0.25turn, indianred 0%, plum 40%, wheat 50%, lightseagreen 67%, seagreen  113%);
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid red; */
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Kreon", serif;
+
+}
+
+.weather-form {
+    display: flex;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: rgba(255,255,255, 0.45);
+    border-radius: 12px;
+}
+
+#city {
+    margin-right: -4px;
+    height: 60px;
+    position: relative;
+    padding: 20px 15px 10px;
+    transition: 0.4s ease;
+    /* border: 2px solid black; */
+    width: 350px;
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 2px solid #777;
+    font-size: 21px;
+    
+}
+
+.city-name {
+    position: absolute;
+    z-index: 2;
+    font-size: 19px;
+    color: #777;
+    top: 164px;
+    left: 496px;
+    transition: 0.5s ease;
+}
+
+.city-name.active {
+    top: 148px;
+    font-size: 17px;
+}
+
+#search-btn {
+    border: 2px solid #777;
+    border-left: 0;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 29px;
+    padding: 9.5px 8px 8.8px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #dedcdc;
+}
+
+.weather-data {
+    display: none;
+    border: 3px solid #a3bfda;
+    background: linear-gradient(0.56turn, #ffff1d 11%,white 48%,cadetblue 98%);
+    /* font-family: "Grandstander", cursive !important; */
+    padding: 45px 20px;
+    border-radius: 15px;
+    width: 404px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+#city-name {
+    color: teal;
+    font-size: 39px;
+    font-family: "Kreon", serif !important;
+}
+
+#city-condition {
+    font-family: "Kreon", serif !important;
+    font-size: 33px;
+    color: firebrick;
+}
+
+#temp-wind {
+    font-family: "Kreon", serif !important;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    color:rebeccapurple;
+    font-size: 27px;
+    font-weight: 600;
+}
