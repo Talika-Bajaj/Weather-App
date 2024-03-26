@@ -37,11 +37,15 @@ async function getWeather (city) {
         let temp = Math.round(data.main.temp);
         let weather = data.weather[0].main;
         let wind = Math.round(data.wind.speed);
+        let humid = data.main.humidity;
         
         weatherData.innerHTML = `
         <h2 id="city-name">${name}</h2>
-        <h3 id = "city-condition">${weather}</h3>
-        <div id = "temp-wind"><p>${temp}\xB0 C</p><p><img src="https://freepngimg.com/save/22908-wind-transparent/512x293" alt="wind" height="18px">${wind} km/h</div>
+        <div id = "temp-condition"><p class = "temp">${temp}\xB0 C</p><p class="weather">${weather}</div>
+        <div class = "show">
+        <div id = "temp-wind-display"><p class = "head">Humidity:</p><p class = "info">${humid}%</p></div>
+        <div id = "temp-wind"><p class = "head">Wind:</p><p class = "info">${wind} km/h</p></div>
+        </div>
         `;
         
     } catch(error) {
