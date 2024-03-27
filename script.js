@@ -3,7 +3,7 @@ import key from './data.json';
 
 let city = document.getElementById("city");
 let searchBtn = document.getElementById("search-btn");
-
+var mykey = key.api_key;
 let units = "&units=metric";
 let place = document.getElementById("city");
 let weatherData = document.querySelector(".weather-data");
@@ -31,7 +31,7 @@ function offFocus () {
 async function getWeather (city) {
     try {
 
-        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place.value}&appid=${key['api-key']}${units}`);
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place.value}&appid=${mykey}${units}`);
         let data = await response.json();
         console.log(data);
         document.getElementById("city").value = "";
