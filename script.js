@@ -19,6 +19,7 @@ searchBtn.addEventListener("click",offFocus);
 
 // function - input field
 function onFocus () {
+    
     document.querySelector(".city-name").classList.add("active");
 }
 
